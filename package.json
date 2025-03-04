@@ -1,0 +1,36 @@
+{
+  "name": "go-smart-move",
+  "displayName": "Gokit: Go Smart Move",
+  "description": "Updates Go package names on file move or creation.",
+  "version": "1.0.0",
+  "publisher": "egorlepa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egorlepa/go-smart-move-vscode.git"
+  },
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/*.go"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
